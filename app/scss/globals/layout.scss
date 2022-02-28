@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+.container {
+	padding: rem(77) rem(32);
+	max-width: rem(637);
+	margin: 0 auto;
+
+  @include breakpoint(medium) {
+    padding: 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+}

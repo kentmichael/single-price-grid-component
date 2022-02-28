@@ -1,0 +1,28 @@
+@use '../util' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--lt-gray);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1rem;
+  display: grid;
+  place-content: center;
+
+  @include breakpoint(medium) {
+    height: 100vh;
+  }
+}
